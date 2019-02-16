@@ -1,4 +1,5 @@
 {
+  "K": 3,
   "trainingDatasetDir": "./training-dataset",
   "trainingDataFile": "./training.data",
   "testDatasetDir": "./test-dataset"

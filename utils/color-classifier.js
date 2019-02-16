@@ -54,7 +54,7 @@ class ColorClassifier {
                 const [r, g, b] = pixels;
                 const sample = [r, g, b];
 
-                console.log(`${image}:`, this.knn(3, sample));
+                console.log(`${image}:`, this.knn(config.K, sample));
             });
         });
     }

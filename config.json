@@ -1,0 +1,5 @@
+{
+  "trainingDatasetDir": "./training-dataset",
+  "trainingDataFile": "./training.data",
+  "testDatasetDir": "./test-dataset"
+}

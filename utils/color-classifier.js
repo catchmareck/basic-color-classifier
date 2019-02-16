@@ -43,6 +43,12 @@ class ColorClassifier {
         const images = fs.readdirSync(config.testDatasetDir, { encoding: 'utf8' });
         images.forEach((image) => {
 
+            if (!image.endsWith('.png')) {
+
+                console.log(`File ${image} doesn't seem to be PNG file. Skipping...`);
+                return;
+            }
+
             PNG.decode(`${config.testDatasetDir}/${image}`, (pixels) => {
 
                 const [r, g, b] = pixels;

@@ -12,6 +12,12 @@ function createTrainingData() {
         const images = getImages(dir);
         images.forEach((image) => {
 
+            if (!image.endsWith('.png')) {
+                
+                console.log(`File ${image} doesn't seem to be PNG file. Skipping...`);
+                return;
+            }
+
             getRGB(dir, image, (inputVector) => {
 
                 fs.appendFileSync(config.trainingDataFile, `${inputVector.join(',')},${dir}\n`);

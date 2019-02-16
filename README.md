@@ -9,7 +9,9 @@ Before you can use this classifier you have to create the training data file. On
 $ node index.js --build
 ```
 
-Once it's done, just put some images directly into the `./test-dataset/` directory and then run
+Once it's done, there should be created `training.data` file in the current working directory.
+
+Then, just put some images directly into the `./test-dataset/` directory and then run
 
 ```sbtshell
 $ node index.js
